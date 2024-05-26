@@ -6,34 +6,27 @@
     <title>Document1</title>
     <style>
       body {
-        background-color: powderblue;
         @view-transition {
           navigation: auto;
         }
       }
-      h1 {
-        color: blue;
-      }
-      p {
-        color: red;
-      }
       .box {
         view-transition-name: box;
         contain: layout;
-        width: 200px;
-        height: 100px;
-        border: 3px solid #73ad21;
       }
-      .left {
+      .state1 {
         position: absolute;
         top: 150px;
         left: 0;
+        width: 200px;
+        height: 100px;
+        border: 3px solid #73ad21;
       }
     </style>
   </head>
   <body>
     <h1>Document 1</h1>
     <a href="./document2.html">go to document 2</a>
-    <div class="box left">box</div>
+    <div class="box state1">box</div>
   </body>
 </html>
