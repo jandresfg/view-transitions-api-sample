@@ -7,6 +7,9 @@
     <style>
       body {
         background-color: powderblue;
+        @view-transition {
+          navigation: auto;
+        }
       }
       h1 {
         color: blue;
@@ -14,10 +17,26 @@
       p {
         color: red;
       }
+      @view-transition {
+        navigation: auto;
+      }
+      .box {
+        view-transition-name: box;
+        contain: layout;
+        width: 200px;
+        height: 100px;
+        border: 3px solid #73ad21;
+      }
+      .right {
+        position: absolute;
+        top: 150px;
+        right: 0;
+      }
     </style>
   </head>
   <body>
     <h1>Document 2</h1>
     <a href="./document1.html">go to document 1</a>
+    <div class="box right">box</div>
   </body>
 </html>
